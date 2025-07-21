@@ -5,6 +5,7 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
+    "cookie-parser": "^1.4.7",
     "cors": "^2.8.5",
     "dotenv": "^17.2.0",
     "express": "^5.1.0",
@@ -15,6 +16,6 @@
   },
   "scripts": {
     "start": "node src/index.js",
-    "dev": "nodemon index.js"
+    "dev": "nodemon src/index.js"
   }
 }

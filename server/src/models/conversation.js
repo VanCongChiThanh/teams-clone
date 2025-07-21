@@ -10,4 +10,5 @@ const conversationSchema = mongoose.Schema({
     label:String,
     value: String,
   }],
+  Messages: [Message],
 });
