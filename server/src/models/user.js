@@ -5,7 +5,6 @@ const userSchema = mongoose.Schema(
     email: { type: String, required: true, unique: true },
     password: { type: String, required: true },
     profilePicture: { type: String, default: "" },
-    createdAt: { type: Date, default: new Date() },
     isVerified: { type: Boolean, default: false },
     role: {
       type: String,
