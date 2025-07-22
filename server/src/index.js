@@ -2,6 +2,7 @@ import express from 'express';
 import dotenv from 'dotenv';
 import cors from 'cors';
 import mongoose from 'mongoose';
+import authRoutes from './routes/auth.js';
 // import Server from "socket.io";
 
 const app = express();
@@ -14,7 +15,7 @@ app.use(cors());
 app.get("/", (req, res) => {
   res.send("Hello to Teams Clone API");
 });
-
+app.use("/auth", authRoutes);
 const CONNECTION_URL = process.env.CONNECTION_URL;
 const PORT = process.env.PORT || 5000;
 mongoose
