@@ -1,4 +1,4 @@
-import { getUsersService,getUsersBySearchService} from "../services/users.service";
+import { getUsersService,getUsersBySearchService} from "../services/users.service.js";
 
 export const getUsers = async (req, res) => {
   const { page = 1, limit = 10 } = req.query;

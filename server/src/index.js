@@ -5,8 +5,8 @@ import mongoose from "mongoose";
 import authRoutes from "./routes/auth.js";
 import conversationsRoutes from "./routes/conversations.js";
 import usersRoutes from "./routes/users.js";
-import eventsRoutes from "./routes/events.js";
-import Server from "socket.io";
+// import eventsRoutes from "./routes/events.js";
+import {Server} from "socket.io";
 
 const app = express();
 dotenv.config();
@@ -21,7 +21,7 @@ app.get("/", (req, res) => {
 app.use("/auth", authRoutes);
 app.use("/conversations", conversationsRoutes);
 app.use("/users", usersRoutes);
-app.use("/events", eventsRoutes);
+// app.use("/events", eventsRoutes);
 
 const CONNECTION_URL = process.env.CONNECTION_URL;
 const PORT = process.env.PORT || 5000;

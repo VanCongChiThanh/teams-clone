@@ -1,4 +1,4 @@
-import { getConversationByIdService,getConversationsService,createConversationService,postMessageService } from "../services/conversation.service";
+import { getConversationByIdService,getConversationsService,createConversationService,postMessageService } from "../services/conversation.service.js";
 export const getConversations = async (req, res) => {
   const { userName, userId } = req.user;
   try {
